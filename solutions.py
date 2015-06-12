@@ -12,3 +12,17 @@ for i in xrange(1000):
 
 #print numbers
 print sum
+
+prev = 0
+curr = 1
+sum = 0
+
+while curr < 4000000:
+    if ( (prev + curr) % 2 == 0):
+        sum += (prev + curr)
+    temp = prev
+    prev = curr
+    curr = temp + curr
+    print curr
+
+print "sum equals: %d" %sum
