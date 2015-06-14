@@ -18,6 +18,7 @@ puts sum
 ##############
 # Problem 2
 ##############
+sum = 0
 prev = 0
 curr = 1
 while curr < 4000000
@@ -27,6 +28,7 @@ while curr < 4000000
     temp = prev
     prev = curr
     curr = temp + curr
+    puts curr
 end
 
 puts "answer for problem 2 is: " + sum.to_s
