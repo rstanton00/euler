@@ -29,4 +29,4 @@ while curr < 4000000
     curr = temp + curr
 end
 
-puts sum
+puts "answer for problem 2 is: " + sum.to_s
