@@ -15,3 +15,20 @@ for (my $i = 1; $i < 1000; ++$i) {
     }
 }
 print $sSum, "\n";
+
+####################
+#Problem 2
+####################
+#find the sum of the even fibonacci numbers up to 4million
+my $sPrev = 1;
+my $sCurr = 2;
+$sSum = 0;
+while ($sCurr < 4000000) {
+    if ($sCurr % 2 == 0) {
+        $sSum += $sCurr;
+    }
+    my $sTemp = $sPrev;
+    $sPrev = $sCurr;
+    $sCurr = $sTemp + $sCurr;
+}
+print "Problem 2 solution: $sSum\n";
