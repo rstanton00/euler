@@ -23,6 +23,19 @@ while curr < 4000000:
     temp = prev
     prev = curr
     curr = temp + curr
-    print curr
+    #print curr
 
 print "sum equals: %d" %sum
+
+
+#Problem 4
+#find largest palndrome product from two 3 digit numbers
+curr = 999
+answer = 0
+while curr > 99:
+    for x in range (1000, 100, -1):
+        product = curr * x
+        if (str(product) == str(product)[::-1] and product > answer):
+            answer = product
+    curr -= 1
+print answer
