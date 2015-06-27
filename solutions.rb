@@ -33,6 +33,7 @@ end
 
 puts "answer for problem 2 is: " + sum.to_s
 
+=begin
 ##############
 # Problem 3
 ##############
@@ -45,3 +46,18 @@ for i in 1...600851475143
     end
 end
 puts array
+=end
+
+###############
+# Problem 4
+###############
+answer = 0
+for i in 999.downto(99)
+    for j in 999.downto(99)
+        product = i*j
+        if (product.to_s == product.to_s.reverse && product > answer)
+            answer = product
+        end
+    end
+end
+puts answer
