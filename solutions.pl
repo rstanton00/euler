@@ -32,3 +32,17 @@ while ($sCurr < 4000000) {
     $sCurr = $sTemp + $sCurr;
 }
 print "Problem 2 solution: $sSum\n";
+
+##################
+#Problem 4
+##################
+my $answer = 0;
+for (my $i = 999; $i > 99; --$i) {
+    for (my $j = 999; $j > 99; --$j) {
+        my $product = $i * $j;
+        if ($product eq scalar reverse($product) && $product > $answer) {
+           $answer = $product;
+        }
+    }
+}
+print "Problem 4 solution: $answer\n";
