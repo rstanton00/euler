@@ -46,12 +46,11 @@ print answer
 i = 21
 solved = 0
 while (not(solved)):
-    print i
-    for x in range (1, 21):
+    for x in range (21, 1, -1):
         if (i % x != 0):
             solved = 0
+            i += 1
             break
         else:
             solved = 1
-    i += 1
 print i
