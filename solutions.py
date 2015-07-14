@@ -2,6 +2,7 @@
 import re
 import sys
 
+'''
 numbers = list()
 sum = 0
 
@@ -39,3 +40,18 @@ while curr > 99:
             answer = product
     curr -= 1
 print answer
+'''
+
+#Problem 5
+i = 21
+solved = 0
+while (not(solved)):
+    print i
+    for x in range (1, 21):
+        if (i % x != 0):
+            solved = 0
+            break
+        else:
+            solved = 1
+    i += 1
+print i
