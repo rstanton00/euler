@@ -40,7 +40,7 @@ while curr > 99:
             answer = product
     curr -= 1
 print answer
-'''
+
 
 #Problem 5
 i = 21
@@ -54,3 +54,11 @@ while (not(solved)):
         else:
             solved = 1
 print i
+'''
+
+i = 0
+while (i < 10):
+ print "testing"
+ i += 1
+
+print "done"
