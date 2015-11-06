@@ -56,9 +56,14 @@ while (not(solved)):
 print i
 '''
 
+print type(3.2)
+
+if (type(3.2) is float):
+    print "it's a float!"
+
 i = 0
 while (i < 10):
- print "testing"
- i += 1
+    print "testing"
+    i += 1
 
 print "done"
