@@ -54,16 +54,29 @@ while (not(solved)):
         else:
             solved = 1
 print i
-'''
+
 
 print type(3.2)
 
 if (type(3.2) is float):
     print "it's a float!"
 
-i = 0
-while (i < 10):
-    print "testing"
-    i += 1
+x = 2**5+1
+print x
+
+print "now strings"
+string1 = "this is"
+string2 = " python speaking"
+print string1 + string2
+
+print "now user input"
+input = raw_input('Please enter text here to have repeated to you:\n')
+print input
+'''
+
+print "Exercise 2.3"
+hours = raw_input("Enter the number of hours worked:   ")
+rate = raw_input("Enter the pay rate of the worker:   ")
+print "Pay:   " + str(35*2.75) + "\n"
 
 print "done"
