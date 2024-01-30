@@ -46,3 +46,5 @@ for (my $i = 999; $i > 99; --$i) {
     }
 }
 print "Problem 4 solution: $answer\n";
+
+print "test\n";
