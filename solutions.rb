@@ -7,10 +7,10 @@ sum = 0
 # Problem 1
 ##############
 for i in 0..999
-    if ((i % 3) == 0 || (i % 5) == 0) then
-        array.push(i)
-        sum = sum + i
-    end
+  if ((i % 3) == 0 || (i % 5) == 0) then
+    array.push(i)
+      sum = sum + i
+  end
 end
 
 puts sum
@@ -22,13 +22,13 @@ sum = 0
 prev = 0
 curr = 1
 while curr < 4000000
-    if ( (prev + curr) % 2 == 0)
-        sum += (prev + curr)
-    end
-    temp = prev
-    prev = curr
-    curr = temp + curr
-    #puts curr
+  if ( (prev + curr) % 2 == 0)
+    sum += (prev + curr)
+  end
+  temp = prev
+  prev = curr
+  curr = temp + curr
+  #puts curr
 end
 
 puts "answer for problem 2 is: " + sum.to_s
@@ -53,11 +53,11 @@ puts array
 ###############
 answer = 0
 for i in 999.downto(99)
-    for j in 999.downto(99)
-        product = i*j
-        if (product.to_s == product.to_s.reverse && product > answer)
-            answer = product
-        end
-    end
+  for j in 999.downto(99)
+    product = i*j
+      if (product.to_s == product.to_s.reverse && product > answer)
+        answer = product
+      end
+  end
 end
 puts answer
